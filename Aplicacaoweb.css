@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(112, 174, 209), rgb(10, 65, 90) );
+    }
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -10%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%; 
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    
+}
+.inputBox{
+    position: relative;    
+}
+.inserirDados{
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.inserirUsuario{
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 5px;
+}
+.inserirUsuario:focus ~ .labelInput,
+.inserirUsuario:valid ~.labelInput
+{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(112, 174, 209), rgb(10, 65, 90) );
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(72, 162, 214), rgb(8, 66, 94) );
+
+}
+.second-step, .final-step{
+    display: none;
+}
+#first-botton{
+    background-image: linear-gradient(to right, rgb(112, 174, 209), rgb(10, 65, 90) );
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.resultado{
+    text-align: center;
+}
